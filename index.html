@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Reason, Really? A Team 4 TOK experience. Test your logic, investigate scientific evidence, challenge a definition of art, and check what you trust online.">
+  <meta name="theme-color" content="#f5f0df">
+  <title>Reason, Really? — Team 4 TOK</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Reason, Really? Home">R<span class="brand-dot">.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#challenge">Test your logic</a><a href="#explore">Beyond the presentation</a><a href="#sources">Sources</a>
+    </nav>
+    <span class="team">TEAM 04 <span class="live-dot" aria-hidden="true"></span> TOK</span>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="home" aria-labelledby="hero-title">
+      <div class="hero-eyebrow"><span>A WAY OF KNOWING</span><span>AN INTERACTIVE FIELD GUIDE</span></div>
+      <h1 id="hero-title">REASON<span class="period">.</span><em>Really?</em></h1>
+      <div class="hero-bottom">
+        <p>“Trust me, it makes sense.”<br>Famous last words. Let’s check the reasoning.</p>
+        <a class="button dark" href="#challenge">Put your logic to the test <span aria-hidden="true">↗</span></a>
+        <span class="time-note">ABOUT 6 MINUTES.<br>ZERO POP QUIZZES THAT COUNT.</span>
+      </div>
+      <div class="hero-index"><span>01 / THINK</span><span>02 / QUESTION</span><span>03 / RECONSIDER</span><span class="scroll-note">SCROLL TO INVESTIGATE ↓</span></div>
+    </section>
+
+    <section class="intro wrap" aria-labelledby="reason-title">
+      <p class="section-label">THE STARTING POINT</p>
+      <div><h2 id="reason-title">A conclusion needs<br><em>something behind it.</em></h2>
+        <p class="lead">Reason uses logic to connect ideas and reach justified conclusions. In TOK, we ask whether the steps follow, what assumptions they depend on, and how much confidence they deserve.</p>
+        <div class="reason-chain" aria-label="The structure of an argument"><span><small>START WITH</small>Premises</span><b aria-hidden="true">→</b><span><small>EXAMINE THE</small>Inference</span><b aria-hidden="true">→</b><span><small>JUSTIFY THE</small>Conclusion</span></div>
+        <p class="small-note">A valid argument has a conclusion that follows from its premises. A sound argument also has true premises. Confidence is not an extra premise.</p>
+      </div>
+    </section>
+
+    <section class="challenge dark-section" id="challenge" aria-labelledby="challenge-title">
+      <div class="wrap">
+        <div class="section-top"><p class="section-label">01 / THE ARGUMENT CHECK</p><span id="quiz-progress">ARGUMENT 1 OF 3</span></div>
+        <div class="challenge-grid">
+          <div><h2 id="challenge-title">Convincing.<br><em>But does it follow?</em></h2><p>Three arguments. A suspicious amount of confidence. Decide whether each conclusion follows from the information given.</p><p class="quiz-count"><span id="quiz-score">0</span> / 3 checked</p></div>
+          <div class="argument-box">
+            <p class="tiny" id="argument-type">THE SHARED-CATEGORY TRAP</p>
+            <div id="argument-copy" class="argument-copy"></div>
+            <p class="question-prompt" id="quiz-prompt">Does the conclusion follow?</p>
+            <div class="choice-row" id="quiz-choices"><button data-answer="yes" class="button light-outline">Yes, it follows</button><button data-answer="no" class="button light-outline">No, there’s a gap</button></div>
+            <div id="quiz-feedback" class="feedback" role="status" aria-live="polite" hidden></div>
+            <button id="quiz-next" class="text-button light" hidden>Next argument <span aria-hidden="true">↗</span></button>
+            <button id="quiz-reset" class="text-button light" hidden>Try the arguments again <span aria-hidden="true">↻</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore wrap" id="explore" aria-labelledby="explore-title">
+      <div class="section-top"><p class="section-label">02 / BEYOND HISTORY & MATHEMATICS</p><span>NEW AOKS. NEW QUESTIONS.</span></div>
+      <h2 id="explore-title">Same tool.<br><em>Different ways to know.</em></h2>
+      <p class="section-description">Our presentation explored historical sources and mathematical proof. Here, take reason into the Natural Sciences and the Arts, then consider Knowledge and Technology.</p>
+      <div class="explore-tabs" role="tablist" aria-label="Choose an area to investigate">
+        <button role="tab" id="tab-science" aria-selected="true" aria-controls="panel-science" tabindex="0" data-panel="science"><span>01</span> Natural Sciences <b aria-hidden="true">↗</b></button>
+        <button role="tab" id="tab-arts" aria-selected="false" aria-controls="panel-arts" tabindex="-1" data-panel="arts"><span>02</span> The Arts <b aria-hidden="true">↗</b></button>
+        <button role="tab" id="tab-tech" aria-selected="false" aria-controls="panel-tech" tabindex="-1" data-panel="tech"><span>03</span> Knowledge & Technology <b aria-hidden="true">↗</b></button>
+      </div>
+
+      <article class="explore-panel" role="tabpanel" id="panel-science" aria-labelledby="tab-science">
+        <div class="case-top"><span class="case-label">REAL-WORLD CASE / H. PYLORI</span><span class="source-link">SOURCE <a href="#source-nobel">[1]</a></span></div>
+        <div class="case-layout science-layout">
+          <div><h3>The stomach<br><em>plot twist.</em></h3><p>In the early 1980s, stress and lifestyle dominated explanations of peptic ulcers. Barry Marshall and Robin Warren challenged that view by investigating <i>Helicobacter pylori</i>.</p><p>Their work connected a bacterium to gastritis and peptic ulcer disease. They received the 2005 Nobel Prize in Physiology or Medicine.</p><p class="aside-note">The twist was a bacterium. The lesson is about evidence.</p></div>
+          <div class="evidence-lab"><div class="section-top"><span class="tiny">OPEN THE EVIDENCE FILE</span><span id="evidence-count">0 / 3 OPENED</span></div><p class="lab-instruction">Reveal each piece. Decide how much it justifies.</p>
+            <button class="evidence-item" aria-expanded="false" aria-controls="evidence-1" data-evidence="1"><span>01</span> A pattern appears <b aria-hidden="true">+</b></button><div class="evidence-content" id="evidence-1" hidden><strong>Observation</strong><p>Warren observed bacteria near inflamed stomach tissue.</p><p class="evidence-verdict">A reason to investigate. Association alone leaves alternative explanations open.</p></div>
+            <button class="evidence-item" aria-expanded="false" aria-controls="evidence-2" data-evidence="2"><span>02</span> A hypothesis becomes testable <b aria-hidden="true">+</b></button><div class="evidence-content" id="evidence-2" hidden><strong>Investigation</strong><p>Researchers cultured the bacterium, making it available for further study.</p><p class="evidence-verdict">Reason connects the hypothesis to predictions that researchers can investigate.</p></div>
+            <button class="evidence-item" aria-expanded="false" aria-controls="evidence-3" data-evidence="3"><span>03</span> Treatment adds evidence <b aria-hidden="true">+</b></button><div class="evidence-content" id="evidence-3" hidden><strong>Converging evidence</strong><p>Treatment studies linked eliminating the infection with lasting recovery in H. pylori-related ulcer disease.</p><p class="evidence-verdict">Different kinds of evidence strengthen the causal explanation. This does not mean every ulcer has the same cause.</p></div>
+            <p id="science-takeaway" class="lab-takeaway" hidden>Case reviewed: scientific reasoning becomes stronger when observations and tests support the same explanation.</p>
+          </div>
+        </div>
+        <div class="kq-row"><div><span class="tiny">FIRST-ORDER QUESTION</span><p>What role does H. pylori play in peptic ulcer disease?</p></div><div><span class="tiny">SECOND-ORDER KNOWLEDGE QUESTION</span><p>When does evidence justify replacing an accepted scientific explanation?</p></div></div>
+        <div class="perspective-row"><div><h4>Why reason helps</h4><p>It links a hypothesis to testable consequences and helps compare explanations.</p></div><div><h4>Where it meets a limit</h4><p>A logical explanation still needs empirical support. A plausible story can fit a pattern without establishing its cause.</p></div></div>
+        <details class="discussion"><summary>A question to take further <span aria-hidden="true">+</span></summary><p>If an expert rejects a new hypothesis, when is that reasonable caution and when is it resistance to change? Compare the evidence available at the time, rather than judging only with hindsight.</p></details>
+      </article>
+
+      <article class="explore-panel" role="tabpanel" id="panel-arts" aria-labelledby="tab-arts" hidden>
+        <div class="case-top"><span class="case-label">REAL-WORLD CASE / FOUNTAIN, 1917</span><span class="source-link">SOURCES <a href="#source-museum">[2]</a> <a href="#source-photo">[4]</a></span></div>
+        <div class="case-layout arts-layout">
+          <figure class="artwork"><img src="assets/fountain.jpg" alt="Alfred Stieglitz’s 1917 black-and-white photograph of Fountain, a porcelain urinal signed R. Mutt 1917, on a pedestal." width="1416" height="1849" loading="lazy"><figcaption>Alfred Stieglitz’s photograph of <i>Fountain</i>, 1917. The original object is lost; this is a historical photograph.</figcaption></figure>
+          <div><h3>Art. Plumbing.<br><em>Both?</em></h3><p>In 1917, a urinal titled <i>Fountain</i> and signed “R. Mutt” was submitted to an exhibition. The committee rejected it. Associated with Marcel Duchamp, it became a major example of the readymade.</p><p class="aside-note">A bathroom fixture started a very long discussion.</p><p>Choose a criterion. Watch the argument change.</p>
+            <div class="lens-options" role="group" aria-label="Choose a criterion for art"><button class="lens selected" aria-pressed="true" data-lens="craft">Craft</button><button class="lens" aria-pressed="false" data-lens="idea">Idea</button><button class="lens" aria-pressed="false" data-lens="context">Context</button></div>
+            <div class="lens-result" id="lens-result" aria-live="polite"></div><p class="small-note">These are simplified interpretive positions, not quotations or a vote on the correct definition of art.</p>
+          </div>
+        </div>
+        <div class="kq-row"><div><span class="tiny">FIRST-ORDER QUESTION</span><p>How did presenting an ordinary object as Fountain challenge conventions of art?</p></div><div><span class="tiny">SECOND-ORDER KNOWLEDGE QUESTION</span><p>To what extent can reason justify a judgment about what counts as art?</p></div></div>
+        <div class="perspective-row"><div><h4>Why reason helps</h4><p>It makes the criteria behind a judgment visible, so people can debate them.</p></div><div><h4>Where it meets a limit</h4><p>A valid argument cannot settle a disagreement if people reject its definition of art. Interpretation also draws on experience and emotion.</p></div></div>
+        <details class="discussion"><summary>A question to take further <span aria-hidden="true">+</span></summary><p>If artistic value depends on context, could a museum make any object valuable? Explain a criterion, then test it against a counterexample. “It’s all subjective” still leaves the reasoning unfinished.</p></details>
+      </article>
+
+      <article class="explore-panel" role="tabpanel" id="panel-tech" aria-labelledby="tab-tech" hidden>
+        <div class="case-top"><span class="case-label">ALTERNATE THEME / KNOWLEDGE & TECHNOLOGY</span><span class="source-link">SOURCE <a href="#source-nist">[3]</a></span></div>
+        <div class="case-layout tech-layout">
+          <div><h3>It sounds certain.<br><em>Should you be?</em></h3><p>A polished AI answer can contain false information. NIST describes this risk as confabulation: confidently presented content that is erroneous or false.</p><p>Reason helps us separate a claim from its delivery. A citation needs checking, and a conclusion needs to follow from what the source actually says.</p><p class="aside-note">An answer can have excellent grammar and terrible evidence.</p></div>
+          <div class="ai-demo"><span class="tiny">FICTIONAL AI ANSWER / CREATED FOR THIS ACTIVITY</span><blockquote>“Students who use StudySprint score 40% higher. Therefore, StudySprint causes better grades.”</blockquote><p class="demo-note">StudySprint and this statistic are invented. There is no real study behind this example.</p><p class="question-prompt">What should you check first?</p><div class="tech-choices"><button data-tech="tone">Whether the answer sounds confident</button><button data-tech="source">Whether the study exists and supports the claim</button><button data-tech="repeat">Whether the same AI repeats the answer</button></div><div id="tech-feedback" class="feedback" role="status" hidden></div></div>
+        </div>
+        <div class="kq-row"><div><span class="tiny">QUESTION ABOUT THE EXAMPLE</span><p>What evidence would be needed to test StudySprint’s supposed effect?</p></div><div><span class="tiny">KNOWLEDGE QUESTION</span><p>How should knowers justify trust in an explanation generated by a system they cannot fully inspect?</p></div></div>
+        <div class="perspective-row"><div><h4>A useful tool</h4><p>AI can suggest explanations and counterarguments that a knower can investigate.</p></div><div><h4>A knower’s responsibility</h4><p>Fluent output does not establish factual accuracy. Verify the original evidence and consider alternative causes before accepting a conclusion.</p></div></div>
+        <details class="discussion"><summary>A question to take further <span aria-hidden="true">+</span></summary><p>We already depend on experts whose full reasoning we cannot personally inspect. What makes trust in an AI explanation similar or different? Consider expertise, transparency, independent checking, and accountability.</p></details>
+      </article>
+    </section>
+
+    <section class="knower dark-section" id="knower" aria-labelledby="knower-title"><div class="wrap">
+      <div class="section-top"><p class="section-label">03 / KNOWLEDGE & THE KNOWER</p><span>ONE LAST CHECK: YOUR OWN ASSUMPTIONS</span></div>
+      <div class="knower-grid"><div><h2 id="knower-title">The argument<br><em>starts with you.</em></h2><p>People can follow the same logical steps and disagree because they accept different premises. Notice which starting point you find most convincing.</p></div>
+        <div class="reflection"><label for="belief">“A claim deserves my trust when…”</label><select id="belief"><option value="">Choose your starting point</option><option value="evidence">Independent evidence supports it</option><option value="expert">An expert supports it</option><option value="intuition">It fits my experience</option><option value="logic">Its reasoning is valid</option></select><div id="belief-feedback" class="reflection-feedback" aria-live="polite"><p>Choose one to reveal its strength and its blind spot.</p></div></div>
+      </div><p class="closing-line">Change your mind.<br><em>Keep your reasons.</em></p>
+    </div></section>
+
+    <section class="sources wrap" id="sources" aria-labelledby="sources-title">
+      <div class="section-top"><p class="section-label">04 / THE RECEIPTS</p><span>MLA REFERENCES & CREDITS</span></div>
+      <h2 id="sources-title">Even this website<br><em>needs its sources.</em></h2>
+      <p class="section-description">Real examples use the sources below. Activities, interpretive lenses, and knowledge questions are educational constructions. Links open in a new tab.</p>
+      <ol class="source-list">
+        <li id="source-nobel"><span class="source-number">01</span><div><h4>The scientific case</h4><p>Nobel Assembly at Karolinska Institutet. “The Nobel Prize in Physiology or Medicine 2005.” <i>NobelPrize.org</i>, 3 Oct. 2005. Accessed 31 Oct. 2026.</p><a href="https://www.nobelprize.org/prizes/medicine/2005/press-release/" target="_blank" rel="noopener noreferrer">Read the Nobel announcement <span aria-hidden="true">↗</span></a></div></li>
+        <li id="source-museum"><span class="source-number">02</span><div><h4>The artistic case</h4><p>Philadelphia Museum of Art. “Marcel Duchamp and the Fountain Scandal.” <i>Philadelphia Museum of Art</i>, 2017. Accessed 31 Oct. 2026.</p><a href="https://press.philamuseum.org/marcel-duchamp-and-the-fountain-scandal" target="_blank" rel="noopener noreferrer">Explore the museum’s account <span aria-hidden="true">↗</span></a></div></li>
+        <li id="source-nist"><span class="source-number">03</span><div><h4>The technology case</h4><p>Autio, Chloe, et al. <i>Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile.</i> National Institute of Standards and Technology, July 2024. NIST AI 600-1. Accessed 31 Oct. 2026.</p><a href="https://doi.org/10.6028/NIST.AI.600-1" target="_blank" rel="noopener noreferrer">Read the NIST profile <span aria-hidden="true">↗</span></a></div></li>
+        <li id="source-photo"><span class="source-number">04</span><div><h4>The historical photograph</h4><p>Stieglitz, Alfred. <i>Fountain.</i> 1917. Photograph of Marcel Duchamp’s readymade. <i>The Blind Man</i>, no. 2, May 1917. <i>Wikimedia Commons</i>. Public domain in the United States. Accessed 31 Oct. 2026.</p><a href="https://commons.wikimedia.org/wiki/File:Marcel_Duchamp,_1917,_Fountain,_photograph_by_Alfred_Stieglitz.jpg" target="_blank" rel="noopener noreferrer">View the original image and credit <span aria-hidden="true">↗</span></a></div></li>
+        <li id="source-ai"><span class="source-number">05</span><div><h4>AI assistance</h4><p>OpenAI. <i>ChatGPT (Codex).</i> Assistance with website planning, draft wording, interactive activities, code, and source discovery for “Reason, Really?” 31 Oct. 2026.</p><a href="https://openai.com/chatgpt/overview/" target="_blank" rel="noopener noreferrer">About the tool <span aria-hidden="true">↗</span></a><p class="small-note">AI assistance is disclosed here. The external references above provide support for the factual examples.</p></div></li>
+      </ol>
+      <details class="font-credits"><summary>Design and font credits</summary><p>Bebas Neue by Ryoichi Tsunekawa; DM Sans by Colophon Foundry; Instrument Serif by Instrument. Distributed through Google Fonts under the SIL Open Font License. Font files are hosted with the website.</p><p><a href="assets/BebasNeue-OFL.txt" target="_blank" rel="noopener">Bebas Neue license</a> · <a href="assets/DMSans-OFL.txt" target="_blank" rel="noopener">DM Sans license</a> · <a href="assets/InstrumentSerif-OFL.txt" target="_blank" rel="noopener">Instrument Serif license</a></p></details>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><div class="footer-mark">REASON<span>.</span><em>Really?</em></div><div><p>TEAM 04 · THEORY OF KNOWLEDGE</p><p>An extension of our presentation on Reason<br>in History and Mathematics.</p></div><a href="#home">Back to the top ↑</a></footer>
+  <noscript><div class="noscript">JavaScript is off. The sources and introductory text still work. Enable JavaScript to try the interactive activities.</div></noscript>
+</body>
+</html>
